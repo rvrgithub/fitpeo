@@ -1,0 +1,85 @@
+.goalContainer {
+    width: 50%;
+    background: #20202a;
+    color: #fff;
+    margin: 1rem;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, .2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+}
+
+.goal-flex-property {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    justify-items: center;
+    text-align: center;
+}
+
+.goal-flex-property p {
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+
+.goal-flex-property p span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    padding: 20px 25px;
+    margin-right: 15px;
+    margin: 10px 15px 25px 10px;
+}
+
+.goal {
+    color: #e56c35;
+    background-color: #62303a;
+}
+
+.food {
+    color: #6279d2;
+    background-color: #26326d;
+}
+
+.menus {
+    color: #2588b3;
+    background-color: #204a60;
+}
+
+.goal-flex-property i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #46484b;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.arrow-stye {
+    color: white;
+    opacity: 1;
+}
+
+@media only screen and (max-width:725px) {
+    .goalContainer {
+        width: 100%;
+    }
+
+    .goal-flex-property i {
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width:525px) {
+    .goalContainer {
+        width: 100%;
+    }
+
+    .goal-flex-property i {
+        margin-top: 5px;
+    }
+}

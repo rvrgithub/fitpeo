@@ -1,0 +1,56 @@
+.menu-icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    /* background-color: black; */
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    box-sizing: content-box;
+}
+
+.box {
+    width: 16px;
+    height: 16px;
+    /* box-sizing: content-box; */
+    background-color: #7796f7;
+}
+
+.box1 {
+    /* border-radius:0 50% 50% 50%; */
+    border-radius: 50% 50% 50% 0;
+}
+
+.box2 {
+    /* border-radius: 50% 0 50% 50%; */
+    border-radius: 0 50% 50% 50%;
+}
+
+.box3 {
+    /* border-radius: 50% 50% 50% 0; */
+    border-radius: 50% 50% 0 50%;
+}
+
+.box4 {
+    /* border-radius: 50% 50% 0 50%; */
+    border-radius: 50% 0 50% 50%;
+
+}
+
+
+
+@media only screen and (max-width:525px) {
+    .menu-icon {
+        width: 27px;
+        height: 27px;
+    }
+
+    .box {
+        width: 13px;
+        height: 13px;
+    }
+
+}

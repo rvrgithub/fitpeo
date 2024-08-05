@@ -1,0 +1,102 @@
+.review-container {
+    width: 50%;
+    background: #20202a;
+    color: #fff;
+    margin: 1rem;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, .2);
+    padding: 20px;
+    overflow: scroll;
+    height: auto;
+    height: 550px;
+    /* scrollbar-width: thin; */
+}
+
+
+.review-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.review-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.review-container::-webkit-scrollbar-thumb {
+    background-color: #8c8d92;
+    border-radius: 30px;
+}
+
+
+.review-container .cards h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.review-container .cards .card {
+    width: 100%;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    padding-left: 0;
+    border-bottom: .5px solid gray;
+}
+
+.review-container .card p {
+    font-size: 1.4rem;
+}
+
+
+.card-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* outline: none; */
+}
+
+.name .one {
+    background: orange;
+}
+
+.name,
+.name .img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name .img {
+    justify-content: center;
+}
+
+.rate i {
+    color: yellow;
+}
+
+.card-content {
+    margin: 0;
+    padding-top: 0;
+}
+
+.review-container .card-content p {
+    font-size: .8rem;
+    color: rgb(152, 152, 165);
+}
+
+.card-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width:750px) {
+    .review-container {
+        margin: 1rem;
+        width: 100%;
+    }
+}

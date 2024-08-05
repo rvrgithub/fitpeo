@@ -1,0 +1,142 @@
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #20202a;
+     color: #ffffff;
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+     padding: 15px 20px;
+     width: 100%;
+ }
+
+ .search-container {
+     display: flex;
+     align-items: center;
+     position: relative;
+ }
+
+ .search-input {
+     padding: 5px;
+     border: none;
+     border-radius: 4px;
+     padding: 10px 15px 10px 40px;
+     background-color: #2a2b2f;
+     color: #b8b9bb;
+     box-shadow: #343333 .25px .25px .25px .26px;
+ }
+
+ .search-icon {
+     position: absolute;
+     left: 0;
+     margin: 10px;
+     color: #b8b9bb;
+     cursor: pointer;
+ }
+
+ input:hover,
+ input:focus {
+     border: none;
+     outline: none;
+ }
+
+ .navbar-right {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+
+ .navbar-right i {
+     padding: 10px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: #45474a;
+     margin: .4rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .icon-button {
+     background: none;
+     border: none;
+     color: rgb(164, 158, 158);
+     cursor: pointer;
+
+ }
+
+
+
+
+
+
+ .navbar .search-container input {
+     width: 100%;
+     height: 100%;
+     border: none;
+     outline: none;
+
+     font-size: 16px;
+     /* .......... */
+     border: none;
+     border-radius: 4px;
+     padding: 10px 15px 10px 40px;
+     background-color: #2a2b2f;
+     color: #b8b9bb;
+ }
+
+ .navbar .search-container input::placeholder {
+     color: #757380;
+ }
+
+ .navbar .search-container i {
+     position: absolute;
+     left: 0;
+     top: 0;
+     color: #757380;
+     font-size: 20px;
+     width: 40px;
+     height: 45px;
+     text-align: center;
+     line-height: 45px;
+ }
+
+
+
+ @media (max-width: 968px) {
+     /* .navbar {
+         width: 93%;
+     } */
+ }
+
+
+ @media (max-width: 768px) {
+     /* .navbar {
+         width: 90%;
+     } */
+
+ }
+
+
+
+ @media screen and (max-width: 525px) {
+     .navbar {
+         width: 90%;
+     }
+
+     .navbar .search-container {
+         width: 120px;
+         z-index: 101;
+     }
+
+     .navbar .search-container input:focus {
+         width: 320px;
+         transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     }
+
+     .navbar-right {
+         margin-right: 30px !important;
+     }
+ }
