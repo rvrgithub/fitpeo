@@ -1,6 +1,7 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import "../Style/bargraph.css";
 // Sample data
 const data = [
     { name: 5, uv: 9000, pv: 3000, amt: 2400 },
@@ -29,10 +30,21 @@ export const BarGraph = () => {
             </div>
 
             {/* Top-right button */}
-            <div style={{ position: 'absolute', top: 20, right: 20, display: "flex", borderRadius: '50px', }}>
-                <button style={{ padding: '5px 20px', background: "#4d4e53", color: "white", borderRadius: '50px', cursor: 'pointer', border: "transparent" }}>
-
-                    Weekly <ArrowDropDownIcon/>
+            <div className='btnDiv'
+                style={{
+                    position: "absolute",
+                    top: 20,
+                    right: 20,
+                    display: "flex",
+                    alignItems: "center", 
+                    justifyContent: "center",
+                    borderRadius: "50px",
+                }}
+            >
+                <button
+                    className='weeklyBtn'
+                >
+                    Weekly <ArrowDropDownIcon />
                 </button>
             </div>
 

@@ -39,10 +39,13 @@ menu ul li a {
     color: #7796f7;
 }
 
- .active-icon::before {
-    width: 7px;
-    transition: all 0.3s;
-    background: #7796f7;
+menu ul li .active-icon::before {
+    position: absolute;
+    top: 0;
+    left: -27px;
+    content: "";
+    width: 0;
+    height: 100%;
 }
 
 menu ul li a:before {
@@ -77,6 +80,13 @@ menu ul li.active a::before {
     background: #7796f7;
 }
 
+
+menu ul:first-of-type li:first-child a::before {
+    width: 7px;
+    transition: all 0.3s;
+    background: #7796f7;
+}
+
 .logout {
     margin-top: auto;
 }
@@ -86,4 +96,13 @@ menu ul li.active a::before {
     menu {
         width: 50px;
     }
+
+    menu ul li a:before {
+        left: -14px;
+    }
+
+    menu ul li:hover a::before {
+        width: 5px;
+    }
+
 }

@@ -1,0 +1,20 @@
+.weeklyBtn {
+    padding: 10px 20px;
+    background: #4d4e53;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+@media screen and (max-width:750px) {
+    .weeklyBtn {
+        padding: 5px 10px;
+        gap: 5px;
+    }
+}
